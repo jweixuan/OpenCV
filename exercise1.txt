@@ -1,7 +1,10 @@
-CvMat is a matrix data structure, which is the basic data type of OpenCV. We can find the definition of the create fuction:
+How to read the cvMat Object:
+
+CvMat is a matrix data structure, which is the basic data type of OpenCV. It just like a 2-D array. We can find the definition of the create fuction:
 
 cvMat* cvCreateMat ( int rows, int cols, int type ); 
 
-So, in order to read a CvMat object, we can use pointer to access the value in CvMat.
+So, in order to read a CvMat object, we can use pointer to access the value in CvMat or input its row and col to access every pixel.
 
-As for the pixel structure, every pixel contains three values to make a color --- R,G,B.
+What is the order of pixel structure:
+As for the pixel structure, every pixel contains three channel values to make a color --- R,G,B.
