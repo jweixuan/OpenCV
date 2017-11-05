@@ -5,6 +5,8 @@ img = cv2.imread('C:/Users/LSC/Desktop/OpenCV_Preperation/OpenCV_homework/Test_i
 cv2.namedWindow("Image") 
 cv2.imshow("Image",img)
 
+print("RGB value: ",img[20,25])
+
 #img1 = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 b,g,r = cv2.split(img)
 
@@ -17,6 +19,9 @@ cv2.imshow("Red",r)
 
 
 img2 = cv2.cvtColor(img, cv2.COLOR_BGR2YCrCb)
+
+print("YCrCb value: ",img2[20,25])
+
 Y,Cb,Cr = cv2.split(img2)
 cv2.namedWindow("Y")
 cv2.imshow("Y",Y)
@@ -26,6 +31,9 @@ cv2.namedWindow("Cr")
 cv2.imshow("Cr",Cr)
 
 img3 = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+
+print("HSV value: ",img3[20,25])
+
 H,S,V = cv2.split(img3)
 cv2.namedWindow("H")
 cv2.imshow("H",H)
