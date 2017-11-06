@@ -1,0 +1,14 @@
+Change the kernel sizes for all the filters with all different values for noises
+and print the results for 3x3, 5x5 and 7x7 kernels.
+
+Salt_pepper noise is created when the methods deal with images. This noise is some white(salt) and black(pepper)pixels on the image.
+So, the result of Salt_pepper image has lots of light point on the image, just like the salt.
+
+Gauss noise: The so-called Gaussian noise refers to a type of noise whose probability density function obeys Gaussian distribution.
+The probability density of Gaussian noise obeys Gaussian distribution (normal distribution) which has means (mean) 
+and sigma (standard deviation) two parameters.
+
+The difference between 3*3, 5*5 and 7*7, we can detect that as the size increase, the image get more blurring.
+
+And, Median filter works better for salt_pepper noise.
+Gaussian filter works better for Gauss noise.
